@@ -13,13 +13,13 @@ body {
   }
 
   #background-pattern {
-    height: 100vh;
-    width: 100vw;
+    height: 200vh;
+    width: 200vw;
 
     background-image: radial-gradient(
         rgba(255, 255, 255, 0.15) 9%, transparent 9%
     );
-    background-position: 0% 20%;
+    background-position: 0% 10%;
     background-size: 5vmin 5vmin;
 
     position: absolute;
@@ -77,17 +77,17 @@ body {
   }
 
   #background-pattern[data-active-index="0"] {
-    background-position: -3% 20%;
+    background-position: -2% 10%;
   }
 
   #background-pattern[data-active-index="1"] {
-    background-position: 3% 20%;
+    background-position: 2% 10%;
   }
 
   #background-pattern[data-active-index="2"] {
-    background-position: 0% 30%;
+    background-position: 0% 14%;
   }
 
   #background-pattern[data-active-index="3"] {
-    background-position: 0% 40%;
+    background-position: 0% 18%;
   }
