@@ -40,13 +40,13 @@ body {
 
   @media (min-width: 800px) {
     a, p {
-      font-size: clamp(2vw, 10vh, 10rem);
+      font-size: clamp(1vw, 10vh, 10rem);
     }
   }
 
   @media (max-width: 799px) {
     a, p {
-      font-size: clamp(2vw, 11vw, 10rem);
+      font-size: clamp(1vw, 11vw, 10rem);
     }
   }
   
