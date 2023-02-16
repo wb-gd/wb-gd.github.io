@@ -1,0 +1,93 @@
+body {
+    height: 100vh;
+    background-color: black;
+    margin: 0rem;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+
+  #text {
+    max-height: 90vh;
+    z-index: 2;
+  }
+
+  #background-pattern {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.15) 9%, transparent 9%
+    );
+    background-position: 0% 20%;
+    background-size: 5vmin 5vmin;
+
+    position: absolute;
+    left: 0%;
+    top: 0%;
+
+    transition: 800ms;
+
+    z-index: 1;
+  }
+  
+  a, p {
+    color: white;
+    font-size: clamp(2vw, 10vh, 10rem);
+    font-family: 'Major Mono Display', monospace;
+    margin: 0rem;
+  }
+
+  @media (min-width: 800px) {
+    a, p {
+      font-size: clamp(2vw, 10vh, 10rem);
+    }
+  }
+
+  @media (max-width: 799px) {
+    a, p {
+      font-size: clamp(2vw, 11vw, 10rem);
+    }
+  }
+  
+  .line {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .word {
+    transition: 800ms;
+  }
+  
+  .wordHovered .word{
+    opacity: 0.2;
+  }
+  
+  .wordHovered .anim:hover {
+    opacity: 1;
+  }
+
+  #background-pattern.wordHovered {
+    background-size: 4.5vmin 4.5vmin;
+    opacity: 0.5;
+  }
+
+  #background-pattern[data-active-index="0"] {
+    background-position: -3% 20%;
+  }
+
+  #background-pattern[data-active-index="1"] {
+    background-position: 3% 20%;
+  }
+
+  #background-pattern[data-active-index="2"] {
+    background-position: 0% 30%;
+  }
+
+  #background-pattern[data-active-index="3"] {
+    background-position: 0% 40%;
+  }
