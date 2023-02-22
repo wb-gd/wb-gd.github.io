@@ -38,13 +38,13 @@ body {
     margin: 0rem;
   }
 
-  @media (min-width: 800px) {
+  @media (orientation: landscape) {
     a, p {
       font-size: clamp(1vw, 10vh, 10rem);
     }
   }
 
-  @media (max-width: 799px) {
+  @media (orientation: portrait) {
     a, p {
       font-size: clamp(1vw, 11vw, 10rem);
     }
