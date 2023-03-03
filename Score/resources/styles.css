@@ -9,11 +9,13 @@ div {
 body {
     height: 100vh;
     width: 100vw;
+    margin: 0;
   }
   
   #app {
     width: 100vw;
     height: 100vh;
+    margin: 0;
     color: white;
     display: flex;
     justify-content: center;
@@ -22,7 +24,7 @@ body {
   
   #away, #home {
     text-align: center;
-    font-size: 45vh;
+    font-size: 43vh;
   }
   
   #reset {
