@@ -7,11 +7,11 @@ var away = document.getElementById("away");
 var home = document.getElementById("home");
 var reset = document.getElementById("reset");
 
-away.onmousedown = function() {
+away.onpointerdown = function() {
   clickTime = Date.now();
 }
 
-away.onmouseup = function() {
+away.onpointerup = function() {
   if (Date.now() - clickTime < minusDelay) {
     awayScore++;
   }
@@ -22,11 +22,11 @@ away.onmouseup = function() {
   away.innerHTML = awayScore;
 }
 
-home.onmousedown = function() {
+home.onpointerdown = function() {
   clickTime = Date.now();
 }
 
-home.onmouseup = function() {
+home.onpointerup = function() {
   if (Date.now() - clickTime < minusDelay) {
     homeScore++;
   }
