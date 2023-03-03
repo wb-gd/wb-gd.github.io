@@ -1,0 +1,39 @@
+:root {
+  background: black;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  #app {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #away, #home {
+    text-align: center;
+    font-size: 45vh;
+  }
+  
+  #reset {
+    position: absolute;
+    font-size: 20vh;
+    margin-left: 5vw;
+  }
+  
+  #reset:active, #away:active, #home:active {
+    opacity: .3;
+  }
+  
+  #reset, #away, #home {
+    opacity 1;
+    transition: 500ms ease-out;
+    cursor: pointer;
+    user-select: none;
+  }
