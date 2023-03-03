@@ -12,25 +12,30 @@ body {
     margin: 0;
   }
   
-  #app {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
   #away, #home {
     text-align: center;
+    color: white;
+    position: absolute;
     font-size: 42.5vh;
+    width: 100vw;
+  }
+
+  #away {
+    top: 0;
+  }
+
+  #home {
+    bottom: 0;
   }
   
   #reset {
     position: absolute;
+    color: white;
     font-size: 20vh;
+    line-height: 20vh;
     margin-left: 5vw;
+    top: 50%;
+    transform: translate(0, -50%);
   }
   
   #reset:active, #away:active, #home:active {
